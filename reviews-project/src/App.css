@@ -1,0 +1,128 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+  border: 2px solid black;
+  padding: 20px 20px;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px gray;
+}
+
+.image-review{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+  z-index: -2;
+}
+
+.image-container::before{
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: slateblue;
+  transform: translateX(-10px);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.image-container{
+  width: 150px;
+  height: 150px;
+}
+
+.image-container::after{
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: slateblue;
+  border-radius: 50%;
+  transform: translateX(-142px);
+  z-index: -3;
+}
+
+.job-text{
+  color: slateblue;
+}
+
+.info-text{
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttons-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.arrow-left{
+  font-size: 1.5rem;
+  color: slateblue;
+}
+
+.arrow-right{
+  font-size: 1.5rem;
+  color: slateblue;
+}
+
+.luquote{
+  position: absolute;
+  font-size: 1.5rem;
+  color: white;
+  transform: translateX(3px) translateY(12px);
+}
+
+.btn-arrow{
+  background-color: transparent;
+  margin: 0px 20px;
+}
