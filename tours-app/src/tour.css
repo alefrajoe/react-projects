@@ -1,0 +1,27 @@
+.tour-container{
+    display: flex;
+    align-items: center;
+    height: 400px;
+}
+
+img{
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+}
+
+.price{
+    position: absolute;
+    transform: translateX(-195px);
+    color: white;
+    background-color: lightgreen;
+    padding: 5px 2px;
+    border-radius: 4px;
+}
+
+p{
+    margin: 2px 80px;
+    font-weight: 100;
+    text-align: start;
+    color: gray;
+}
